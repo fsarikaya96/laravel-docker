@@ -1,7 +1,7 @@
 # Laravel Docker
 ### Create vendor File
 ```
-composer update --no-scripts
+docker-compose exec app composer update --no-scripts
 ```
 ### Run application
 
