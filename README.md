@@ -1,8 +1,5 @@
 # Laravel Docker
-### Create vendor File
-```
-docker-compose exec app composer update --no-scripts
-```
+
 ### Run application
 
 ```
@@ -26,7 +23,10 @@ docker-compose exec app php artisan key:generate
 ```
 docker exec app composer install
 ```
-
+### Create vendor File
+```
+docker-compose exec app composer update --no-scripts
+```
 ### Migrate
 
 ```
