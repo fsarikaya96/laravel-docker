@@ -1,34 +1,25 @@
 # Laravel Docker
 
-### Run application
+# Install
+
+**1. Clone Project**
 
 ```
-docker-compose up -d --build
+  $ https://github.com/fsarikaya96/laravel-docker.git
 ```
 
-### Close application
+**2. Install**
 
 ```
-docker-compose kill
+  $ docker-compose up -d
+  $ docker exec app composer install
+  $ docker exec app php artisan key:generate
+  $ docker exec app php artisan migrate
 ```
 
-### Key generate
+**3. Url & phpMyAdmin**
 
 ```
-docker-compose exec app php artisan key:generate
-```
-
-### Composer install
-
-```
-docker exec app composer install
-```
-### Create vendor File
-```
-docker-compose exec app composer update --no-scripts
-```
-### Migrate
-
-```
-docker exec app php artisan migrate
+ http://localhost:8080
+ http://localhost:8081
 ```
